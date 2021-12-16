@@ -1,7 +1,7 @@
 ThisBuild / version := "0.1.0-SNAPSHOT"
 
 ThisBuild / scalaVersion := "2.12.12"
-
+lazy val root = project.in(file(".")).aggregate(Question1and2, Question3)
 lazy val Question1and2 = project.in(file("Question1and2"))
   .settings(
     libraryDependencies ++= Seq(
